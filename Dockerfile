@@ -15,7 +15,7 @@ RUN conda create -y -n tfenv python=3.5 && \
             numpy==1.16.0 \
             pandas==0.22.0 \
             matplotlib==2.2.2"\
-            sklearn.__version__==0.22.2.post1
+            sklearn==0.22.2.post1
 
 # Use that environment by default
 ENV PATH /opt/conda/envs/tfenv/bin:$PATH
