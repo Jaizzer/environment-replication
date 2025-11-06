@@ -1,9 +1,5 @@
 FROM continuumio/miniconda3:4.5.4
 
-# Install build-essential for C/C++ dependencies (like grpcio, numpy)
-RUN conda update -y conda && \
-    conda install -y -c conda-forge build-essential 
-
 # Create and install dependencies into a Python 3.5 environment
 RUN conda create -y -n tfenv python=3.5 && \
     /bin/bash -c "source activate tfenv && \
