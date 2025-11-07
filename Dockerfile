@@ -37,7 +37,8 @@ RUN conda create -y -n tfenv python=3.5 && \
             pystan==2.19.1.1 \
             holidays==0.9.12 \
             fbprophet \
-            statsmodels"
+            statsmodels \
+            keras_self_attention"
 
 # --- SECTION 3: ENVIRONMENT AND STARTUP ---
 
